@@ -1,5 +1,5 @@
 export class User {
-  id: string;
+  userId: string;
   username: string;
   password: string;
   profileImageUrl: string;
@@ -7,13 +7,13 @@ export class User {
   lastLoginDateDisplay: string;
   joinDate: Date;
   roles: string[];
-  authorities: string;
+  authorities: string[];
   isActive: boolean;
   isNotLocked: boolean;
   token: string;
 
   constructor(
-    id: string,
+    userId: string,
     username: string,
     password: string,
     profileImageUrl: string,
@@ -21,12 +21,12 @@ export class User {
     lastLoginDateDisplay: string,
     joinDate: Date,
     roles: string[],
-    authorities: string,
+    authorities: string[],
     isActive: boolean,
     isNotLocked: boolean,
     token: string
   ) {
-    this.id = id;
+    this.userId = userId;
     this.username = username;
     this.password = password;
     this.profileImageUrl = profileImageUrl;
